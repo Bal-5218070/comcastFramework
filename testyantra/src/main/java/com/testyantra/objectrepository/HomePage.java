@@ -17,6 +17,14 @@ public HomePage(WebDriver driver) {
 private WebElement administratorlink;
 @FindBy(xpath="//a[@href='index.php?module=Users&action=Logout']")
 private WebElement logoutlink;
+
+@FindBy(linkText="Products")
+private WebElement productLink;
+
+ 
+public WebElement getProductLink() {
+	return productLink;
+}
 @FindBy(linkText="Contacts")
 private WebElement contactlink;
 @FindBy(xpath="//a[text()='Organizations']")
